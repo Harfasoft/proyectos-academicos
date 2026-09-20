@@ -1,0 +1,70 @@
+# ==========================================
+# Archivos de configuración de IDEs y Editores
+# ==========================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+*.code-workspace
+
+# JetBrains / WebStorm / IntelliJ / PHPStorm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# ==========================================
+# Dependencias y paquetes de Desarrollo Web
+# ==========================================
+node_modules/
+bower_components/
+jspm_packages/
+.npm/
+.yarn/
+package-lock.json
+yarn.lock
+
+# ==========================================
+# Archivos del Sistema Operativo
+# ==========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==========================================
+# Archivos Temporales, Logs y Entorno
+# ==========================================
+*.log
+*.tmp
+*.temp
+.env
+.env.local
+.env.development
+.env.production
