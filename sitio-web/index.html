@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento de Tesis Digital</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fuente moderna desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Panel Lateral de Navegación -->
+    <aside class="sidebar">
+        <div class="brand">
+            <h2>Tesis Digital</h2>
+        </div>
+        <nav class="menu">
+            <a href="#portada" class="nav-btn active" onclick="showSection('portada')">Portada</a>
+            <a href="#resumen" class="nav-btn" onclick="showSection('resumen')">Resumen</a>
+            <a href="#introduccion" class="nav-btn" onclick="showSection('introduccion')">1. Introducción</a>
+            <a href="#marco" class="nav-btn" onclick="showSection('marco')">2. Marco Teórico</a>
+            <a href="#metodologia" class="nav-btn" onclick="showSection('metodologia')">3. Metodología</a>
+            <a href="#resultados" class="nav-btn" onclick="showSection('resultados')">4. Resultados</a>
+            <a href="#conclusiones" class="nav-btn" onclick="showSection('conclusiones')">5. Conclusiones</a>
+            <a href="#referencias" class="nav-btn" onclick="showSection('referencias')">Referencias</a>
+            <a href="curriculum-vitae.html" class="nav-btn">Sobre Mi</a>
+        </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+
+        <!-- Portada -->
+        <section id="portada" class="content-card active-card">
+            <div class="card-header">
+                <span class="badge">Trabajo de Grado</span>
+                <h1>Título de la Investigación o Proyecto de Tesis</h1>
+            </div>
+            <div class="card-body">
+                <div class="info-grid">
+                    <div class="info-box">
+                        <h3>Autor</h3>
+                        <p>Nombre del Estudiante</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Tutor / Director</h3>
+                        <p>Nombre del Docente</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Institución</h3>
+                        <p>Universidad / Facultad</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Fecha</h3>
+                        <p>Año 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resumen -->
+        <section id="resumen" class="content-card">
+            <h2>Resumen (Abstract)</h2>
+            <hr class="divider">
+            <p>Escribe aquí una breve síntesis de la investigación: el problema abordado, los objetivos principales, la metodología aplicada y las conclusiones clave obtenidas.</p>
+            <div class="keywords">
+                <strong>Palabras clave:</strong> <span>Investigación</span> <span>Desarrollo</span> <span>Tecnología</span>
+            </div>
+        </section>
+
+        <!-- Introducción -->
+        <section id="introduccion" class="content-card">
+            <h2>1. Introducción</h2>
+            <hr class="divider">
+            <div class="floating-container">
+                <div class="float-box">
+                    <h3>Planteamiento del Problema</h3>
+                    <p>Descripción detallada de la problemática que dio origen a este trabajo de investigación.</p>
+                </div>
+                <div class="float-box">
+                    <h3>Objetivo General</h3>
+                    <p>Enunciar el propósito global que se pretende alcanzar con el desarrollo de la tesis.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marco Teórico -->
+        <section id="marco" class="content-card">
+            <h2>2. Marco Teórico</h2>
+            <hr class="divider">
+            <p>Revisión de la literatura, investigaciones previas y fundamentos conceptuales que sustentan el estudio.</p>
+            <div class="floating-container">
+                <div class="float-box highlight">
+                    <h3>Bases Teóricas</h3>
+                    <p>Conceptos principales y autores referentes en el área académica.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metodología -->
+        <section id="metodologia" class="content-card">
+            <h2>3. Metodología</h2>
+            <hr class="divider">
+            <p>Exposición del diseño metodológico, tipo de estudio, recolección de datos y procedimientos seguidos.</p>
+        </section>
+
+        <!-- Resultados -->
+        <section id="resultados" class="content-card">
+            <h2>4. Resultados y Discusión</h2>
+            <hr class="divider">
+            <p>Presentación de los datos obtenidos, análisis de los gráficos y comparación con los antecedentes.</p>
+        </section>
+
+        <!-- Conclusiones -->
+        <section id="conclusiones" class="content-card">
+            <h2>5. Conclusiones y Recomendaciones</h2>
+            <hr class="divider">
+            <p>Síntesis de los logros alcanzados respecto a los objetivos iniciales y líneas futuras de trabajo.</p>
+        </section>
+
+        <!-- Referencias -->
+        <section id="referencias" class="content-card">
+            <h2>Referencias Bibliográficas</h2>
+            <hr class="divider">
+            <ul class="ref-list">
+                <li>Apellido, N. (Año). <em>Título del libro o artículo</em>. Editorial o Revista.</li>
+                <li>Apellido, N. (Año). <em>Título del documento web</em>. Nombre del sitio.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

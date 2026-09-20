@@ -1,0 +1,238 @@
+ /* --- VARIABLES Y RESET --- */
+        :root {
+            --primary-color: #0284c7;
+            --primary-dark: #0369a1;
+            --text-main: #334155;
+            --text-light: #64748b;
+            --bg-body: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px 10px;
+        }
+
+        /* --- BOTONES DE ACCIÓN (PANEL SUPERIOR) --- */
+        .action-bar {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.2s, transform 0.1s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .btn-word {
+            background-color: #2b579a;
+        }
+
+        .btn-word:hover {
+            background-color: #1e3d6b;
+        }
+
+        /* --- CONTENEDOR PRINCIPAL --- */
+        .cv-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        /* --- ENCABEZADO / HEADER RESPONSIVO --- */
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 30px 25px;
+            border-bottom: 4px solid var(--primary-color);
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        header .subtitle {
+            color: #94a3b8;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        /* --- CONTENIDO PRINCIPAL --- */
+        .content {
+            padding: 25px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #0f172a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 6px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        p {
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        /* Subtítulos y Listas */
+        h3 {
+            font-size: 1rem;
+            color: var(--primary-dark);
+            margin: 10px 0 5px 0;
+        }
+
+        h4 {
+            font-size: 0.95rem;
+            color: #1e293b;
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 6px;
+            color: var(--text-main);
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        /* --- FOOTER / REDES SOCIALES RESPONSIVAS --- */
+        footer {
+            background-color: #f1f5f9;
+            padding: 15px 25px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        /* --- MEDIA QUERIES (RESPONSIVIDAD PARA CELULARES) --- */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px 5px;
+            }
+
+            .action-bar {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            header {
+                padding: 20px 15px;
+            }
+
+            header h1 {
+                font-size: 1.4rem;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.05rem;
+            }
+        }
+
+        /* --- ESTILOS PARA IMPRESIÓN Y PDF --- */
+        @media print {
+            .action-bar {
+                display: none !important;
+            }
+
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .cv-card {
+                box-shadow: none;
+                border: none;
+                max-width: 100%;
+            }
+        }
